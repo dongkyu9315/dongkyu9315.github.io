@@ -28,11 +28,11 @@ body {
 }
 
 #menu a {
-	padding: 8px;
+	padding: 9px;
 }
 
 #menu a:hover {
-	color:#000000;
+	color: #000000;
 	background-color: #ffffff;
 }
 
