@@ -28,8 +28,9 @@ body {
 }
 
 #menu a:hover {
-	color:#ffffff;
-	background-color: #000000;
+	color:#000000;
+	background-color: #ffffff;
+	height: 40px;
 }
 
 .wrapper {
