@@ -22,13 +22,19 @@ body {
 	background-color: #333;
 }
 
-#menu li {
-	display: inline;
+#menu ul {
+	padding: 8px 0px;
 }
 
-#menu li:hover {
+#menu li {
+	display: inline;
+	padding: 20px;
+}
+
+#menu a:hover {
 	color:#000000;
 	background-color: #ffffff;
+	background-size: 20px 8px
 }
 
 .wrapper {
