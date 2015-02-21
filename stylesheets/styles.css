@@ -31,7 +31,7 @@ body {
 	padding: 20px;
 }
 
-#menu a:hover {
+#menu li:hover {
 	color:#000000;
 	background-color: #ffffff;
 	height: 100px;
