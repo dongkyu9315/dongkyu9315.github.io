@@ -31,6 +31,10 @@ body {
 	padding: 9px;
 }
 
+#manu a:link {
+	color: #ffffff;
+}
+
 #menu a:hover {
 	color: #000000;
 	background-color: #ffffff;
