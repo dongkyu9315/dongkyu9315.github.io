@@ -1,32 +1,30 @@
 body {
-	background: -webkit-linear-gradient(#ffff80, #ffff00);		/* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#ffff80, #ffff00);			/* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#ffff80, #ffff00);			/* For Firefox 3.6 to 15 */
-    background: linear-gradient(#ffff80, #ffff00);				/* Standard syntax (must be last) */
+    background-color: #ffffff;
 	
-	padding: 50px 0;
-	margin: 0;
+	margin: 0 auto;
 	font: 14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 300;
 }
 
 .wrapper {
-	width: 800px;
 	margin: 0 auto;
 	padding-left: 20px;
-	padding-right: 20px;
-	color: #ffffff;
-	background-color: #333;
-	border-radius: 8px;
-	box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(0, 0, 0, 0.45) 0 3px 10px;
+}
+
+#menu {
+	background-color: #400080;
+	float: left;
+	height: 100%;
+	width: 22%;
+	text-align: right;
 }
 
 #menu ul {
 	padding: 8px 0px;
+	list-style-type: none;
 }
 
 #menu li {
-	display: inline;
 	padding: 20px;
 }
 
@@ -45,15 +43,24 @@ body {
 	text-align: right;
 }
 
-.sidebar #contact {
+#contact {
 	position: fixed;
 	bottom: 50px;
-	right: 77%;
+	right: 78%;
 	text-align: right;
 }
 
-.footer {
-	width: 800px;
+#main {
+	float: right;
+	width: 75%;
+	box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(0, 0, 0, 0.45) 0 3px 10px;
+}
+
+#footer {
+	height: 50px;
 	margin: 0 auto;
+	padding-top: 5px;
+	padding-right: 10px;
+	clear: both;
 	text-align: right;
 }
