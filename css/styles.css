@@ -6,11 +6,6 @@ body {
 	font-weight: 300;
 }
 
-.sidebar {
-	float: left;
-	text-align: right;
-}
-
 .contact {
 	position: fixed;
 	bottom: 50px;
@@ -22,9 +17,13 @@ body {
 }
 
 .navbar-custom .navbar-collapse .navbar-nav > li > a,
-.navbar-custom .navbar-collapse .navbar-nav > li > a:hover,
 .navbar-custom .navbar-collapse .navbar-nav > li > a:focus {
 	color: #ffffff;
+}
+
+.navbar-custom .navbar-collapse .navbar-nav > li > a:hover {
+	color: #800080;
+	background-color: #ffffff;
 }
 
 .navbar-custom .navbar-collapse .navbar-nav > .active > a {

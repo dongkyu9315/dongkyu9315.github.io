@@ -11,6 +11,28 @@
 	<link rel="stylesheet" href="../css/styles.css">
 	<link rel="stylesheet" href="../css/pygment_trac.css">
 	
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script>
+	var myCenter=new google.maps.LatLng(45.504785,-73.577151);
+	
+	function initialize() {
+		var mapProp = {
+				center:myCenter,
+				zoom:14,
+				mapTypeId:google.maps.MapTypeId.ROADMAP
+		};
+		
+		var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+		
+		var marker=new google.maps.Marker({
+			position:myCenter,
+		});
+		
+		marker.setMap(map);
+	}
+	google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<meta name="author" content="dongkyu9315@gmail.com, Dong Kyu (Jason) Kim" />
 	<meta name="copyright" content="Copyright 2015 Dong Kyu (Jason) Kim" />
@@ -53,8 +75,10 @@
 			
 			<!-- main body -->
 			<div class="col-sm-8">
-				<h1>McGill</h1>
-				
+				<div class="jumbotron">
+					<h2>McGill</h2>
+					<div id="googleMap" style="width:500px;height:380px;"></div>
+				</div>
 			</div>
 			
 			<!-- section on the right -->
