@@ -4,34 +4,12 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="chrome=1">
 	
-	<title>Pacific Academy</title>
-	<link rel="shortcut icon" href="../images/checker.png">
+	<title>Programming</title>
+	<link rel="shortcut icon" href="../../images/checker.png">
 	
-	<link rel="stylesheet" href="../css/bootstrap.min.css">
-	<link rel="stylesheet" href="../css/styles.css">
-	<link rel="stylesheet" href="../css/pygment_trac.css">
-	
-	<script src="http://maps.googleapis.com/maps/api/js"></script>
-	<script>
-	var myCenter=new google.maps.LatLng(49.188744,-122.754181);
-	
-	function initialize() {
-		var mapProp = {
-				center:myCenter,
-				zoom:14,
-				mapTypeId:google.maps.MapTypeId.ROADMAP
-		};
-		
-		var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-		
-		var marker=new google.maps.Marker({
-			position:myCenter,
-		});
-		
-		marker.setMap(map);
-	}
-	google.maps.event.addDomListener(window, 'load', initialize);
-	</script>
+	<link rel="stylesheet" href="../../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../css/styles.css">
+	<link rel="stylesheet" href="../../css/pygment_trac.css">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<meta name="author" content="dongkyu9315@gmail.com, Dong Kyu (Jason) Kim" />
@@ -43,7 +21,7 @@
 	<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="../">Dong Kyu (Jason) Kim</a>
+				<a class="navbar-brand" href="../../">Dong Kyu (Jason) Kim</a>
 				<button class="navbar-toggle" data-toggle="collapse" data-target="#navHeaderCollapse">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -52,32 +30,49 @@
 			</div>
 			<div class="collapse navbar-collapse" id="navHeaderCollapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="../">Home</a></li>
-					<li><a href="../Projects/">Projects</a></li>
-					<li><a href="../McGill/">McGill</a></li>
-					<li class="active"><a href="">Pacific Academy</a></li>
+					<li><a href="../../">Home</a></li>
+					<li><a href="../../McGill/">McGill</a></li>
+					<li><a href="../../Pacific_Academy/">Pacific Academy</a></li>
+					<li><a href="../../Projects/">Projects</a></li>
+					<li class="active dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="">Programming<span class="caret"></span></a>
+          				<ul class="dropdown-menu" id="dropdown-nav">
+          					<li><a href="">Data Structure</a></li>
+          					<li><a href="../Design_Pattern/">Design Pattern</a></li>
+          				</ul>
+					</li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 	
+	<div class="jumbotron">
+		<div class="row">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-6">
+				<h2>Data Structure</h2>
+			</div>
+			<div class="col-sm-3"></div>
+		</div>
+	</div>
 	<div class="container-fluid">
 		<div class="row">
 			
-			<!-- contact me on the left -->
+			<!-- nav on the left -->
 			<div class="col-sm-2">
-				<div class="contact">
-					<h3>Contact Me</h3>
-					<p>Email: <br />
-					dong.k.kim@mail.mcgill.ca</p>
+				<div class="navbar nav-default container-fluid" id="sidenav">
+					<ul class="nav navbar-nav">
+						<li><a href=""><h5>Array</h5></a></li>
+						<li><a href="../Data_Structure/string.html"><h5>String</h5></a></li>
+					</ul>
 				</div>
 			</div>
 			
 			<!-- main body -->
 			<div class="col-sm-8">
 				<div class="jumbotron">
-					<h2>Pacific Academy</h2>
-					<div id="googleMap" style="width:500px;height:380px;"></div>
+					<h2>Array</h2>
+					
 				</div>
 			</div>
 			
@@ -99,7 +94,8 @@
 	
 	<!-- load scripts at the bottom to load the page faster -->
 	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-	<script src="../js/bootstrap.min.js"></script>
-	<script src="../js/scale.fix.js"></script>
+	<script src="../../js/bootstrap.min.js"></script>
+	<script src="../../js/scale.fix.js"></script>
+	<script src="../../js/mypage.js"></script>
 </body>
 </html>
