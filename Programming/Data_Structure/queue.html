@@ -63,10 +63,10 @@
 				<div class="navbar nav-default container-fluid" id="sidenav">
 					<ul class="nav navbar-nav">
 						<li><a href="../Data_Structure/string.html"><h5>String</h5></a></li>
-						<li><a href=""><h5>Array</h5></a></li>
+						<li><a href="../Data_Structure/array.html"><h5>Array</h5></a></li>
 						<li><a href="../Data_Structure/linkedList.html"><h5>Linked List</h5></a></li>
 						<li><a href="../Data_Structure/stack.html"><h5>Stack</h5></a></li>
-						<li><a href="../Data_Structure/queue.html"><h5>Queue</h5></a></li>
+						<li><a href=""><h5>Queue</h5></a></li>
 					</ul>
 				</div>
 			</div>
@@ -74,15 +74,51 @@
 			<!-- main body -->
 			<div class="col-sm-8">
 				<div class="jumbotron">
-					<h2>Array</h2>
+					<h2>Queue&lt;E&gt;</h2>
 					
 					<h3>Important Methods</h3>
 					<dl>
-						<dt><code>copyOf(Type&lt;T&gt;[] original, int newLength)</code><small>: static &lt;T&gt;[]</small></dt>
-						<dd> - Copies the specified array, truncating or padding with zeroes, null, or false (if necessary) so the copy has the specified length</dd>
-						<dt><code>sort(Type&lt;T&gt;[] a)</code><small>: static &lt;T&gt;[]</small></dt>
-						<dd> - Sorts the specified array into ascending order</dd>
+						<dt><code>add(E e)</code><small>: boolean</small></dt>
+						<dd> - Inserts the specified element into this queue if it is possible to do so immediately without violating capacity restrictions, returning true upon success and throwing an IllegalStateException if no space is currently available</dd>
+						<dt><code>peek()</code><small>: E</small></dt>
+						<dd> - Retrieves, but does not remove, the head of this queue, or returns null if this queue is empty</dd>
+						<dt><code>remove()</code><small>: E</small></dt>
+						<dd> - Retrieves and removes the head of this queue</dd>
 					</dl>
+					
+					<h3>Implementation</h3>
+					<p>
+						<pre>
+class Queue {
+	private Node first, last;
+	
+	public void enqueue(Object item) {
+		if (first == null) {
+			last = new node(item);
+			first = last;
+		} else {
+			last.next = new Node(item);
+			last = last.next;
+		}
+	}
+	
+	public Object dequeue() {
+		if (first != null) {
+			Object item = first.data;
+			first = first.next;
+			
+			if (first == null) {
+				last = null;
+			}
+			
+			return null;
+		}
+		
+		return null;
+	}
+}
+						</pre>
+					</p>
 				</div>
 			</div>
 			

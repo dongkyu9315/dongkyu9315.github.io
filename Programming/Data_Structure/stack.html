@@ -63,9 +63,9 @@
 				<div class="navbar nav-default container-fluid" id="sidenav">
 					<ul class="nav navbar-nav">
 						<li><a href="../Data_Structure/string.html"><h5>String</h5></a></li>
-						<li><a href=""><h5>Array</h5></a></li>
+						<li><a href="../Data_Structure/array.html"><h5>Array</h5></a></li>
 						<li><a href="../Data_Structure/linkedList.html"><h5>Linked List</h5></a></li>
-						<li><a href="../Data_Structure/stack.html"><h5>Stack</h5></a></li>
+						<li><a href=""><h5>Stack</h5></a></li>
 						<li><a href="../Data_Structure/queue.html"><h5>Queue</h5></a></li>
 					</ul>
 				</div>
@@ -74,15 +74,51 @@
 			<!-- main body -->
 			<div class="col-sm-8">
 				<div class="jumbotron">
-					<h2>Array</h2>
+					<h2>Stack&lt;E&gt;</h2>
 					
 					<h3>Important Methods</h3>
 					<dl>
-						<dt><code>copyOf(Type&lt;T&gt;[] original, int newLength)</code><small>: static &lt;T&gt;[]</small></dt>
-						<dd> - Copies the specified array, truncating or padding with zeroes, null, or false (if necessary) so the copy has the specified length</dd>
-						<dt><code>sort(Type&lt;T&gt;[] a)</code><small>: static &lt;T&gt;[]</small></dt>
-						<dd> - Sorts the specified array into ascending order</dd>
+						<dt><code>empty()</code><small>: boolean</small></dt>
+						<dd> - Tests if this stack is empty</dd>
+						<dt><code>peek()</code><small>: E</small></dt>
+						<dd> - Looks at the object at the top of this stack without removing it from the stack</dd>
+						<dt><code>pop()</code><small>: E</small></dt>
+						<dd> - Removes the object at the top of this stack and returns that object as the value of this function</dd>
+						<dt><code>push(E item)</code><small>: E</small></dt>
+						<dd> - Pushes an item onto the top of this stack</dd>
+						<dt><code>search(Object o)</code><small>: int</small></dt>
+						<dd> - Returns the 1-based position where an object is on this stack</dd>
 					</dl>
+					
+					<h3>Implementation</h3>
+					<p>
+						<pre>
+class Stack {
+	private Node top;
+	
+	public Object pop() {
+		if (top != null) {
+			Object item = top.data;
+			top = top.next;
+			
+			return item;
+		}
+		
+		return null;
+	}
+	
+	public void push(Object item) {
+		Node t = new Node(item);
+		t.next = top;
+		top = t;
+	}
+	
+	public Object peek() {
+		return top.data;
+	}
+}
+						</pre>
+					</p>
 				</div>
 			</div>
 			

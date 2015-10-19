@@ -62,8 +62,8 @@
 			<div class="col-sm-2">
 				<div class="navbar nav-default container-fluid" id="sidenav">
 					<ul class="nav navbar-nav">
-						<li><a href="../Data_Structure/string.html"><h5>String</h5></a></li>
-						<li><a href=""><h5>Array</h5></a></li>
+						<li><a href=""><h5>String</h5></a></li>
+						<li><a href="../Data_Structure/array.html"><h5>Array</h5></a></li>
 						<li><a href="../Data_Structure/linkedList.html"><h5>Linked List</h5></a></li>
 						<li><a href="../Data_Structure/stack.html"><h5>Stack</h5></a></li>
 						<li><a href="../Data_Structure/queue.html"><h5>Queue</h5></a></li>
@@ -74,14 +74,33 @@
 			<!-- main body -->
 			<div class="col-sm-8">
 				<div class="jumbotron">
-					<h2>Array</h2>
+					<h2>String</h2>
 					
 					<h3>Important Methods</h3>
 					<dl>
-						<dt><code>copyOf(Type&lt;T&gt;[] original, int newLength)</code><small>: static &lt;T&gt;[]</small></dt>
-						<dd> - Copies the specified array, truncating or padding with zeroes, null, or false (if necessary) so the copy has the specified length</dd>
-						<dt><code>sort(Type&lt;T&gt;[] a)</code><small>: static &lt;T&gt;[]</small></dt>
-						<dd> - Sorts the specified array into ascending order</dd>
+						<dt><code>charAt(int index)</code><small>: char</small></dt>
+						<dd> - Returns the char value at the specified index</dd>
+						<dt><code>compareTo(String anotherString)</code><small>: int</small></dt>
+						<dd> - Compares two strings lexicographically</dd>
+						<dd> - Returns 0 if equal, -ve number if less than, and +ve number if greater than</dd>
+						<dt><code>concat(String str)</code><small>: String</small></dt>
+						<dd> - Concatenates the specified string to the end of this string</dd>
+						<dt><code>indexOf(String str<small>, int fromIndex</small>)</code><small>: int</small></dt>
+						<dd> - Returns the index within this string of the first occurence of the specified substring<small>, starting at the specified index</small></dd>
+						<dt><code>length()</code><small>: int</small></dt>
+						<dd> - Returns the length of this string</dd>
+						<dt><code>replace(char oldChar, char newChar)</code><small>: String</small></dt>
+						<dd> - Returns a new string resulting from replacing all occurrences of oldChar in this string with newChar</dd>
+						<dt><code>split(String regex)</code><small>: String[]</small></dt>
+						<dd> - Splits this string around matches of the given regular expression</dd>
+						<dt><code>startsWith(String prefix)</code><small>: boolean</small></dt>
+						<dd> - Tests if this string starts with the specified prefix</dd>
+						<dt><code>substring(int beginIndex)</code><small>: String</small></dt>
+						<dd> - Returns a new string that is a substring of this string</dd>
+						<dt><code>toCharArray()</code><small>: char[]</small></dt>
+						<dd> - Converts this string to a new character array</dd>
+						<dt><code>valueOf(Type&lt;T&gt;)</code><small>: static String</small></dt>
+						<dd> - Returns the string representation of the Type&lt;T&gt; argument</dd>
 					</dl>
 				</div>
 			</div>
