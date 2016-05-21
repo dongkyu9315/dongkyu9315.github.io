@@ -1,9 +1,0 @@
-{
-  "firebase": "myowndb",
-  "public": ".",
-  "ignore": [
-    "firebase.json",
-    "**/.*",
-    "**/node_modules/**"
-  ]
-}
