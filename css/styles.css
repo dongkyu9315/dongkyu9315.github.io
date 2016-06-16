@@ -87,7 +87,6 @@ body {
 	position: relative;
 	height: 100vh;
 	width: 100%;
-	background: url(../images/toronto_skyline.jpg) no-repeat center bottom fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -98,7 +97,6 @@ body {
 	position: relative;
 	height: 100vh;
 	width: 100%;
-	background: url(../images/montreal_skyline.jpg) no-repeat center bottom fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -109,7 +107,6 @@ body {
 	position: relative;
 	height: 100vh;
 	width: 100%;
-	background: url(../images/seoul_skyline.jpg) no-repeat center bottom fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -200,3 +197,4 @@ body {
 /*--------*/
 /* footer */
 /*--------*/
+
