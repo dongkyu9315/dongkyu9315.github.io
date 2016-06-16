@@ -83,34 +83,36 @@ body {
 /*------------*/
 /* front page */
 /*------------*/
-#torontoPic {
-	position: relative;
-	height: 100vh;
+.carousel,
+.item,
+.active {
+	height: 100%;
+}
+
+.carousel-inner {
+	height: 100%;
+}
+
+.frontPic {
+	height: 100%;
 	width: 100%;
+	background-position: center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
+}
+
+#torontoPic {
+	background-image: url("../images/toronto_skyline.jpg");
 }
 
 #montrealPic {
-	position: relative;
-	height: 100vh;
-	width: 100%;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
+	background-image: url("../images/montreal_skyline.jpg");
 }
 
 #seoulPic {
-	position: relative;
-	height: 100vh;
-	width: 100%;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
+	background-image: url("../images/seoul_skyline.jpg");
 }
 
 .verticalCenter {
