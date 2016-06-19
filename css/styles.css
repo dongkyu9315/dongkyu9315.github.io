@@ -6,7 +6,7 @@ body {
     background-color: #ffffff;
     height: 100%;
 	margin: 0 auto;
-	font: 14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font: 1.5em Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 300;
 }
 
@@ -16,6 +16,10 @@ body {
 @media (max-width: 768px) {
 	.col-sm-3 {
 		padding-bottom: 20px;
+	}
+
+	.left-padding {
+		padding-left: 10px;
 	}
 }
 
@@ -116,10 +120,16 @@ body {
 }
 
 .verticalCenter {
-	display: table;
 	margin: 0 auto;
 	top: 50%;
 	transform: translateY(-20%);
+}
+
+.textBox {
+	color: #ffffff;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.5);
+	padding: 10px; 
 }
 
 /*-----------*/
@@ -131,6 +141,12 @@ body {
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
+}
+
+#degreeText {
+	color: #ffffff;
+	font-weight: 400;
+	padding-top: 80px;
 }
 
 #mcgillCampus {
@@ -194,6 +210,11 @@ body {
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
+}
+
+#projectIndex {
+	color: #ffffff;
+	text-align: center;
 }
 
 /*--------*/
