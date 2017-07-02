@@ -107,8 +107,8 @@ body {
 	-o-background-size: cover;
 }
 
-#torontoPic {
-	background-image: url("../images/toronto_skyline.jpg");
+#seattlePic {
+	background-image: url("../images/seattle_skyline.jpeg");
 }
 
 #montrealPic {
